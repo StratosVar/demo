@@ -1,0 +1,42 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>Page Title</title>
+
+</head>
+
+<body>
+
+
+    <p>This is an example of JS</p>
+    <p id="1"></p>
+    <button onclick="person.bio()">Show bio</button><br><br>
+    <button onclick="person.greeting()">Show greeting</button><br><br>
+    <button onclick="myFunction()">On Page</button>
+
+    <script>
+        let person = {
+            name: ['James', 'Bond'],
+            age: 40,
+            gender: 'male',
+            hair: 'brown',
+            eyes: 'green',
+            intrests: ['spying', 'drinking martini'],
+            bio: function () {
+                alert(this.name[0] + '' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.intrests[0] + ' and ' +
+                    this.intrests[1] + '.');
+            },
+            greeting: function () {
+                alert('Hi! I\'m ' + this.name[0] + '.');
+            }
+        };
+    </script>
+    <script>function myFunction() {
+            document.getElementById("1").innerHTML = "Hello!!!";
+        }</script>
+</body>
+
+</html>
